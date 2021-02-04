@@ -54,8 +54,8 @@ public class RingBuffer<T> {
 
         Runnable producer = () -> {
             while (ringBuffer.keepRunning) {
-                ringBufferLock.lock();
                 try {
+                    ringBufferLock.lock();
                     while (ringBuffer.isFull()) {
                         spaceAvailable.await();
                     }
@@ -73,8 +73,8 @@ public class RingBuffer<T> {
 
         Runnable consumer = () -> {
             while (ringBuffer.keepRunning) {
-                ringBufferLock.lock();
                 try {
+                    ringBufferLock.lock();
                     while (ringBuffer.isEmpty()) {
                         contentAvailable.await();
                     }
