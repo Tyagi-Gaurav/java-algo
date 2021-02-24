@@ -9,4 +9,5 @@
 | Combinations | Given a string, print the number of combination of characters taken 'n' at a time | :heavy_check_mark: |
 | Separating characters | How many ways to separate a string "abaccadd" in to  3 strings so that each of them contain same amount of "a"s | :heavy_check_mark: |
 | Non-Divisible Subset | Given a set of distinct integers, print the size of a maximal subset of _S_ where the sum of any `2` numbers in _S'_ is not evenly divisible by _k_. | :heavy_check_mark: |
+| Queens Attack II | You will be given a square chess board with one queen and a number of obstacles placed on it. Determine how many squares the queen can attack. | :heavy_check_mark: | 
 | Check path for points in graph | | 
